@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-eqiuv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Responsive Opay Hero Section</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav">
+                <div class="logo"><a href="#"> <img src="./assets/Pay2-removebg-preview.png" height="300px"></a></div>
+                <ul class="links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Personal</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Impact</a></li>
+                </ul>
+            </div>
+            <a href="#" class="action_btn1">Contact Us</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Personal</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Impact</a></li>
+            <li><a href="#" class="action_btn1">Contact Us</a></li>
+        </div>
+    </header>
+
+    <div class="subhero1">
+        <h2>We are beyond</h2>
+    </div>
+    <div class="subhero2">
+        <h3>Banking...</h3>
+    </div>
+
+    <div class="subhero3">
+        <button class="action_btn2">Download our app
+            <i class="fa-thin fa-arrow-up-right" color="white"></i></button>
+        <div class="action_btn3">Licenced and insured by<img src="./assets/CBN_logo.png" height="15px" class="cbn">
+            <div class="vertical-line"></div>
+        </div>
+
+    </div>
+    <img src="./assets/NDIC_logo-.png" height="50px" class="ndic">
+
+    </div>
+
+    <script>
+        const toggleBtn= document.querySelector('.toggle_btn')
+        const toggleBtnIcon= document.querySelector('.toggle_btn i')
+        const dropDownMenu= document.querySelector('.dropdown_menu')
+    
+        toggleBtn.onClick = function (){
+            dropDownMenu.classList.toggle('open')
+
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+
+</html>
