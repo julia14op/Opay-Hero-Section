@@ -206,7 +206,7 @@ header {
 
 @media (max-width: 992px){
     body {
-        height: 123vh;
+        height: 140vh;
         background-color: #fff;
         background-image: url('https://cdn.pixabay.com/photo/2022/03/27/10/18/market-7094635__340.jpg');
         background-size: cover;
@@ -271,7 +271,7 @@ header {
     width: 480px;
     height: 60px;
     position: absolute;
-    top:150px;
+    top:130px;
     left:-113px;
 }
 
